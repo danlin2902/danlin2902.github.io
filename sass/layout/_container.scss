@@ -1,6 +1,11 @@
 .container {
   padding: 5rem;
 
+  @include respond(tab-port) {
+    padding: 2rem;
+    padding-top: 2rem;
+  }
+
   &__line {
     width: 32rem;
 
@@ -14,6 +19,11 @@
       background-color: rgb(200, 200, 200);
       height: 1px;
       border: none;
+
+      @include respond(tab-port) {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+      }
     }
 
     &--2 {
@@ -24,6 +34,15 @@
       height: 1px;
       border: none;
       z-index: 10;
+
+      @include respond(tab-port) {
+        margin-top: 12rem;
+        margin-bottom: 0;
+      }
+
+      @include respond(phone-lg) {
+        margin-top: 10rem;
+      }
     }
 
     &--3 {
@@ -33,6 +52,15 @@
       background-color: rgb(191, 191, 191);
       height: 1px;
       border: none;
+
+      @include respond(tab-port) {
+        margin-top: 0;
+        margin-bottom: 8rem;
+      }
+
+      @include respond(phone-lg) {
+        display: none;
+      }
     }
 
 

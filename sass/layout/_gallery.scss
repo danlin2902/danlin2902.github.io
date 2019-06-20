@@ -5,6 +5,15 @@
   margin-top: -20rem;
   height: 100vh;
 
+  @include respond(tab-port) {
+    margin-top: -16rem;
+  }
+
+  @include respond(phone-lg) {
+    margin-top: -12rem;
+    height: 80vh;
+  }
+
 
   &__title {
     margin-top: 8rem;
@@ -15,6 +24,14 @@
     text-align: center;
     // text-decoration: line-through;
 
+    @include respond(tab-land) {
+      margin-top: 6rem;
+    }
+
+    @include respond(phone-lg) {
+      margin-top: 2rem;
+    }
+
   }
 
   &__descr {
@@ -23,16 +40,34 @@
     color: gray;
     text-align: center;
     letter-spacing: 4px;
+
+
+    // @include respond(tab-land) {
+    //   margin-bottom: 2rem;
+    // }
   }
 }
 .gallery {
-  margin-top: -20rem;
+  margin-top: -18rem;
+  margin-bottom: 0;
   grid-column: full-start / full-end;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(11, 1fr);
   grid-template-rows: repeat(20, 6vw);
   grid-gap: 1.5rem;
   padding: 3rem;
+  padding-bottom: 0;
+
+  @include respond(tab-land) {
+    margin-top: -16rem;
+  }
+
+  @include respond(phone-lg) {
+    margin-top: -14rem;
+  }
+
+
+
 
   &__item {
 
@@ -101,10 +136,10 @@
     //   grid-column: 5 / span 3;
     // }
 
-    &--14 {
-      grid-row: 6 / span 2;
-      grid-column: 8 / -1;
-    }
+    // &--14 {
+    //   grid-row: 6 / span 2;
+    //   grid-column: 8 / -1;
+    // }
 
   }
 

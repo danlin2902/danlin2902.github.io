@@ -5,16 +5,36 @@
   justify-content: space-between;
   align-items: center;
 
+  @include respond(tab-land) {
+    padding: 6rem;
+  }
+
+  @include respond(tab-port) {
+    padding: 4rem;
+  }
+  @include respond(phone-lg) {
+    padding: 2rem;
+  }
+
   &__img {
     padding: 0 4rem;
     width: 24rem;
     height: auto;
+
+    @include respond(tab-land) {
+      padding-right: 0;
+    }
+
   }
 
   &__text {
     justify-content: center;
-    padding: 0 4rem;
+    padding: 0;
+    padding-left: 4rem;
 
+    @include respond(phone-lg) {
+      padding-left: 2rem;
+    }
 
 
     &--title {
@@ -22,13 +42,25 @@
       font-size: 5rem;
       font-weight: 700;
       text-decoration: underline;
+
+      @include respond(tab-land) {
+        margin-bottom: 6rem;
+      }
+
+      @include respond(tab-port) {
+        margin-bottom: 2rem;
+      }
+
     }
 
     &--about {
       margin-bottom: 4rem;
-      font-size: 3rem;
+      font-size: 2.8rem;
       font-weight: 300;
       // line-height: 2.5rem;
+      @include respond(tab-land) {
+        font-size: 2.5rem;
+      }
 
     }
   }

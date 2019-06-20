@@ -21,5 +21,9 @@
     background-color: rgba(22, 22, 22, 0.2);
     border-radius: 2px;
     cursor: pointer;
+
+    @include respond(tab-port) {
+      padding: .8rem 1.2rem;
+    }
   }
 }

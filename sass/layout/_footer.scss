@@ -2,6 +2,10 @@
   background-color: rgb(22, 22, 22);
   padding: 7rem;
 
+  @include respond(tab-port) {
+    padding: 6rem;
+  }
+
   &__text {
     display: flex;
     justify-content: space-between;
@@ -24,6 +28,14 @@
     padding-top: 0;
     margin-top: -4rem;
 
+    @include respond(tab-land) {
+      margin-top: -2rem;
+    }
+    @include respond(tab-port) {
+      margin-top: -0;
+    }
+
+
   }
 }
 
@@ -33,6 +45,18 @@
   margin-top: 4rem;
   padding: 8rem;
   font-weight: 100;
+
+  @include respond(tab-land) {
+    padding: 6rem;
+  }
+
+  @include respond(tab-port) {
+    padding: 4rem;
+  }
+  @include respond(phone-lg) {
+    padding-right: 0;
+    padding-left: 2rem;
+  }
 
 
   &__title {
@@ -61,6 +85,18 @@
   font-weight: 100;
   text-align: right;
 
+  @include respond(tab-land) {
+    padding: 6rem;
+  }
+
+  @include respond(tab-port) {
+    padding: 4rem;
+  }
+  @include respond(phone-lg) {
+    padding-right: 2rem;
+    padding-left: 0;
+  }
+
   &__title {
     margin-bottom: 1rem;
     font-size: 2rem;
@@ -81,6 +117,10 @@
       font-size: 2.6rem;
       margin-left: 2rem;
       margin-top: .6rem;
+
+      @include respond(phone-lg) {
+        margin-left: 1rem;
+      }
 
 
       a {

@@ -1,5 +1,5 @@
 .banner {
-  height: 115vh;
+  height: 110vh;
   background-image: linear-gradient(
     to right bottom,
     rgba(0,0,0, 0.3),
@@ -9,5 +9,15 @@
   background-position: center;
   background-attachment: fixed;
   position: relative;
+
+  // @include respond(tab-land) {
+  //   height: 100vh;
+  // }
+
+
+  @include respond(tab-port) {
+    height: 100%;
+    width: auto;
+  }
 
 }

@@ -8,12 +8,39 @@
 
 html {
   font-size: 62.5%;   //1rem = 10px; 10px/16px = 62.5%
+
+
+    // @include respond(tab) { //width < 1280?
+    //   font-size: 60%;
+
+   @include respond(tab-land) { //width < 1080?
+      font-size: 52%;
+    }
+
+    @include respond(tab-port) { //width < 980?
+      font-size: 45%;
+    }
+
+    @include respond(phone-lg) { //width < 780?
+      font-size: 38%;
+    }
+    @include respond(phone-sm) {
+      font-size: 25%;
+    }
+
+    @include respond(big-desktop) {
+      font-size: 70%;
+    }
 }
 
 body {
   box-sizing: border-box;
   color: black;
   font-family: 'Montserrat', sans-serif;
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
 
 }
 

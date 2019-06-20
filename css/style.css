@@ -7,44 +7,95 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 67.5em) {
+    html {
+      font-size: 52%; } }
+  @media only screen and (max-width: 61.25em) {
+    html {
+      font-size: 45%; } }
+  @media only screen and (max-width: 48.75em) {
+    html {
+      font-size: 38%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 25%; } }
+  @media only screen and (min-width: 105.6em) {
+    html {
+      font-size: 70%; } }
 
 body {
   box-sizing: border-box;
   color: black;
   font-family: 'Montserrat', sans-serif; }
+  @media only screen and (max-width: 61.25em) {
+    body {
+      padding: 0; } }
 
 .about {
   padding: 8rem;
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media only screen and (max-width: 67.5em) {
+    .about {
+      padding: 6rem; } }
+  @media only screen and (max-width: 61.25em) {
+    .about {
+      padding: 4rem; } }
+  @media only screen and (max-width: 48.75em) {
+    .about {
+      padding: 2rem; } }
   .about__img {
     padding: 0 4rem;
     width: 24rem;
     height: auto; }
+    @media only screen and (max-width: 67.5em) {
+      .about__img {
+        padding-right: 0; } }
   .about__text {
     justify-content: center;
-    padding: 0 4rem; }
+    padding: 0;
+    padding-left: 4rem; }
+    @media only screen and (max-width: 48.75em) {
+      .about__text {
+        padding-left: 2rem; } }
     .about__text--title {
       margin-bottom: 8rem;
       font-size: 5rem;
       font-weight: 700;
       text-decoration: underline; }
+      @media only screen and (max-width: 67.5em) {
+        .about__text--title {
+          margin-bottom: 6rem; } }
+      @media only screen and (max-width: 61.25em) {
+        .about__text--title {
+          margin-bottom: 2rem; } }
     .about__text--about {
       margin-bottom: 4rem;
-      font-size: 3rem;
+      font-size: 2.8rem;
       font-weight: 300; }
+      @media only screen and (max-width: 67.5em) {
+        .about__text--about {
+          font-size: 2.5rem; } }
 
 .banner {
-  height: 115vh;
+  height: 110vh;
   background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../img/header-athens.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   position: relative; }
+  @media only screen and (max-width: 61.25em) {
+    .banner {
+      height: 100%;
+      width: auto; } }
 
 .container {
   padding: 5rem; }
+  @media only screen and (max-width: 61.25em) {
+    .container {
+      padding: 2rem;
+      padding-top: 2rem; } }
   .container__line {
     width: 32rem;
     margin-right: auto;
@@ -56,6 +107,10 @@ body {
       background-color: #c8c8c8;
       height: 1px;
       border: none; }
+      @media only screen and (max-width: 61.25em) {
+        .container__line--1 {
+          margin-top: 4rem;
+          margin-bottom: 4rem; } }
     .container__line--2 {
       margin-top: 14rem;
       margin-bottom: 2rem;
@@ -64,6 +119,13 @@ body {
       height: 1px;
       border: none;
       z-index: 10; }
+      @media only screen and (max-width: 61.25em) {
+        .container__line--2 {
+          margin-top: 12rem;
+          margin-bottom: 0; } }
+      @media only screen and (max-width: 48.75em) {
+        .container__line--2 {
+          margin-top: 10rem; } }
     .container__line--3 {
       margin-top: 2rem;
       margin-bottom: 10rem;
@@ -71,6 +133,13 @@ body {
       background-color: #bfbfbf;
       height: 1px;
       border: none; }
+      @media only screen and (max-width: 61.25em) {
+        .container__line--3 {
+          margin-top: 0;
+          margin-bottom: 8rem; } }
+      @media only screen and (max-width: 48.75em) {
+        .container__line--3 {
+          display: none; } }
 
 .gall {
   background-color: #161616;
@@ -78,6 +147,13 @@ body {
   padding: 6rem;
   margin-top: -20rem;
   height: 100vh; }
+  @media only screen and (max-width: 61.25em) {
+    .gall {
+      margin-top: -16rem; } }
+  @media only screen and (max-width: 48.75em) {
+    .gall {
+      margin-top: -12rem;
+      height: 80vh; } }
   .gall__title {
     margin-top: 8rem;
     padding: 4rem;
@@ -85,6 +161,12 @@ body {
     font-size: 4rem;
     font-weight: 500;
     text-align: center; }
+    @media only screen and (max-width: 67.5em) {
+      .gall__title {
+        margin-top: 6rem; } }
+    @media only screen and (max-width: 48.75em) {
+      .gall__title {
+        margin-top: 2rem; } }
   .gall__descr {
     font-size: 2rem;
     font-weight: 200;
@@ -93,13 +175,21 @@ body {
     letter-spacing: 4px; }
 
 .gallery {
-  margin-top: -20rem;
+  margin-top: -18rem;
+  margin-bottom: 0;
   grid-column: full-start / full-end;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(11, 1fr);
   grid-template-rows: repeat(20, 6vw);
   grid-gap: 1.5rem;
-  padding: 3rem; }
+  padding: 3rem;
+  padding-bottom: 0; }
+  @media only screen and (max-width: 67.5em) {
+    .gallery {
+      margin-top: -16rem; } }
+  @media only screen and (max-width: 48.75em) {
+    .gallery {
+      margin-top: -14rem; } }
   .gallery__item--1 {
     grid-row: 1 / span 4;
     grid-column: 1 / span 6; }
@@ -124,9 +214,6 @@ body {
   .gallery__item--8 {
     grid-row: 16 / span 4;
     grid-column: 7 / -1; }
-  .gallery__item--14 {
-    grid-row: 6 / span 2;
-    grid-column: 8 / -1; }
   .gallery__img {
     width: 100%;
     height: 100%;
@@ -139,6 +226,9 @@ body {
 .footer {
   background-color: #161616;
   padding: 7rem; }
+  @media only screen and (max-width: 61.25em) {
+    .footer {
+      padding: 6rem; } }
   .footer__text {
     display: flex;
     justify-content: space-between;
@@ -156,12 +246,28 @@ body {
     padding: 3rem;
     padding-top: 0;
     margin-top: -4rem; }
+    @media only screen and (max-width: 67.5em) {
+      .footer p {
+        margin-top: -2rem; } }
+    @media only screen and (max-width: 61.25em) {
+      .footer p {
+        margin-top: -0; } }
 
 .contact {
   width: 32%;
   margin-top: 4rem;
   padding: 8rem;
   font-weight: 100; }
+  @media only screen and (max-width: 67.5em) {
+    .contact {
+      padding: 6rem; } }
+  @media only screen and (max-width: 61.25em) {
+    .contact {
+      padding: 4rem; } }
+  @media only screen and (max-width: 48.75em) {
+    .contact {
+      padding-right: 0;
+      padding-left: 2rem; } }
   .contact__title {
     margin-bottom: 1rem;
     font-size: 2rem;
@@ -180,6 +286,16 @@ body {
   padding: 8rem;
   font-weight: 100;
   text-align: right; }
+  @media only screen and (max-width: 67.5em) {
+    .follow {
+      padding: 6rem; } }
+  @media only screen and (max-width: 61.25em) {
+    .follow {
+      padding: 4rem; } }
+  @media only screen and (max-width: 48.75em) {
+    .follow {
+      padding-right: 2rem;
+      padding-left: 0; } }
   .follow__title {
     margin-bottom: 1rem;
     font-size: 2rem;
@@ -197,6 +313,9 @@ body {
       font-size: 2.6rem;
       margin-left: 2rem;
       margin-top: .6rem; }
+      @media only screen and (max-width: 48.75em) {
+        .follow__icons--icon {
+          margin-left: 1rem; } }
       .follow__icons--icon a {
         display: block;
         color: gray; }
@@ -205,8 +324,17 @@ body {
   color: white;
   font-family: 'Montserrat', sans-serif; }
   .header__text {
-    padding: 15rem;
-    margin-left: 4rem; }
+    padding: 16rem;
+    margin: 0 auto; }
+    @media only screen and (max-width: 80em) {
+      .header__text {
+        padding: 12rem; } }
+    @media only screen and (max-width: 67.5em) {
+      .header__text {
+        padding: 10rem; } }
+    @media only screen and (max-width: 48.75em) {
+      .header__text {
+        padding: 8rem; } }
     .header__text--intro {
       font-size: 3rem;
       font-weight: 200;
@@ -216,7 +344,7 @@ body {
       font-weight: 400; }
   .header__icons {
     margin-left: 3rem;
-    margin-top: 6rem;
+    margin-top: 0;
     list-style: none; }
     .header__icons--icon {
       margin-top: 1rem;
@@ -242,3 +370,6 @@ body {
     background-color: rgba(22, 22, 22, 0.2);
     border-radius: 2px;
     cursor: pointer; }
+    @media only screen and (max-width: 61.25em) {
+      .navigation__nav {
+        padding: .8rem 1.2rem; } }
