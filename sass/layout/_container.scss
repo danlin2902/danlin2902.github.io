@@ -1,0 +1,42 @@
+.container {
+  padding: 5rem;
+
+  &__line {
+    width: 32rem;
+
+    margin-right: auto;
+    margin-left: auto;
+    color: rgb(191, 191, 191);
+
+    &--1 {
+      margin-top: 6rem;
+      margin-bottom: 2rem;
+      color: rgb(191, 191, 191);
+      background-color: rgb(191, 191, 191);
+      height: 1px;
+      border: none;
+    }
+
+    &--2 {
+      margin-top: 14rem;
+      margin-bottom: 2rem;
+      color: white;
+      background-color: white;
+      height: 1px;
+      border: none;
+      z-index: 10;
+    }
+
+    &--3 {
+      margin-top: 4rem;
+      margin-bottom: 2rem;
+      color: rgb(191, 191, 191);
+      background-color: rgb(191, 191, 191);
+      height: 1px;
+      border: none;
+    }
+
+
+  }
+
+}

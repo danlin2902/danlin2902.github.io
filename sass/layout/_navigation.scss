@@ -1,0 +1,22 @@
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 3rem;
+  position: relative;
+
+
+  &__logo {
+    font-size: 4rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  &__nav {
+    font-size: 3rem;
+    position: fixed;
+    top: 4rem;
+    right: 4rem;
+
+  }
+}

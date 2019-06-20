@@ -1,0 +1,36 @@
+
+.about {
+  padding: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__img {
+    padding: 0 4rem;
+    width: 24rem;
+    height: auto;
+  }
+
+  &__text {
+    justify-content: center;
+    padding: 0 4rem;
+
+
+
+    &--title {
+      margin-bottom: 8rem;
+      font-size: 5rem;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+
+    &--about {
+      margin-bottom: 4rem;
+      font-size: 3rem;
+      font-weight: 300;
+      // line-height: 2.5rem;
+
+    }
+  }
+
+}
