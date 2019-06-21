@@ -4,15 +4,16 @@
   font-family: 'Montserrat', sans-serif;
 
   &__text {
-    padding: 16rem;
+    padding: 16rem 18rem;
     margin: 0 auto;
 
+
     @include respond(tab) {
-      padding: 12rem;
+      padding: 12rem 14rem;
     }
 
     @include respond(tab-land) {
-      padding: 10rem;
+      padding: 10rem 12rem;
     }
 
     @include respond(phone-lg) {
@@ -49,7 +50,7 @@
 
   &__icons {
     margin-left: 3rem;
-    margin-top: 0;
+    margin-top: 4rem;
     list-style: none;
 
     @include respond(tab-port) {

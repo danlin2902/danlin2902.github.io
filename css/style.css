@@ -101,7 +101,12 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  position: relative; }
+  position: relative;
+  display: block; }
+  @media only screen and (max-width: 48.75em) {
+    .banner {
+      height: 90vh;
+      width: auto; } }
   @media only screen and (max-width: 48.75em) {
     .banner {
       height: 90vh;
@@ -156,7 +161,7 @@ body {
         .container__line--2 {
           margin-top: 4rem; } }
     .container__line--3 {
-      margin-top: 2rem;
+      margin-top: 1rem;
       margin-bottom: 10rem;
       color: #bfbfbf;
       background-color: #bfbfbf;
@@ -189,7 +194,7 @@ body {
       margin-top: 0;
       padding: 2rem; } }
   .gall__title {
-    margin-top: 8rem;
+    margin-top: 6rem;
     padding: 4rem;
     padding-bottom: 2rem;
     font-size: 4rem;
@@ -359,14 +364,14 @@ body {
   color: white;
   font-family: 'Montserrat', sans-serif; }
   .header__text {
-    padding: 16rem;
+    padding: 16rem 18rem;
     margin: 0 auto; }
     @media only screen and (max-width: 80em) {
       .header__text {
-        padding: 12rem; } }
+        padding: 12rem 14rem; } }
     @media only screen and (max-width: 67.5em) {
       .header__text {
-        padding: 10rem; } }
+        padding: 10rem 12rem; } }
     @media only screen and (max-width: 48.75em) {
       .header__text {
         padding: 8rem; } }
@@ -388,7 +393,7 @@ body {
       text-align: left; }
   .header__icons {
     margin-left: 3rem;
-    margin-top: 0;
+    margin-top: 4rem;
     list-style: none; }
     @media only screen and (max-width: 61.25em) {
       .header__icons {
@@ -404,7 +409,8 @@ body {
   justify-content: space-between;
   color: white;
   padding: 3rem;
-  position: relative; }
+  position: relative;
+  margin-bottom: 2rem; }
   @media only screen and (max-width: 61.25em) {
     .navigation {
       margin-bottom: 4rem; } }

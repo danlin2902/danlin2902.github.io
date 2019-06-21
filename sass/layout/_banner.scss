@@ -9,10 +9,16 @@
   background-position: center;
   background-attachment: fixed;
   position: relative;
+  display: block;
 
   // @include respond(tab-land) {
   //   height: 100vh;
   // }
+
+  @include respond(phone-lg) {
+    height: 90vh;
+    width: auto;
+  }
 
   @include respond(phone-lg) {
     height: 90vh;
