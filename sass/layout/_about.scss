@@ -15,14 +15,27 @@
   @include respond(phone-lg) {
     padding: 2rem;
   }
+  @include respond(phone-lg) {
+    padding: 0;
+  }
+
+  @include respond(phone-sm) {
+    padding: 4rem 1rem;
+  }
 
   &__img {
     padding: 0 4rem;
     width: 24rem;
     height: auto;
 
+
+
     @include respond(tab-land) {
       padding-right: 0;
+    }
+
+    img {
+      box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
     }
 
   }
@@ -30,10 +43,14 @@
   &__text {
     justify-content: center;
     padding: 0;
-    padding-left: 4rem;
+    padding-right: 4rem;
 
     @include respond(phone-lg) {
-      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    @include respond(phone-sm) {
+      padding-left: 0;
     }
 
 
@@ -51,6 +68,10 @@
         margin-bottom: 2rem;
       }
 
+      @include respond(phone-sm) {
+        font-size: 4rem;
+      }
+
     }
 
     &--about {
@@ -58,8 +79,12 @@
       font-size: 2.8rem;
       font-weight: 300;
       // line-height: 2.5rem;
+
       @include respond(tab-land) {
         font-size: 2.5rem;
+      }
+      @include respond(phone-sm) {
+        margin-bottom: 0;
       }
 
     }

@@ -16,7 +16,7 @@ html {
   @media only screen and (max-width: 48.75em) {
     html {
       font-size: 38%; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 38.75em) {
     html {
       font-size: 25%; } }
   @media only screen and (min-width: 105.6em) {
@@ -45,6 +45,12 @@ body {
   @media only screen and (max-width: 48.75em) {
     .about {
       padding: 2rem; } }
+  @media only screen and (max-width: 48.75em) {
+    .about {
+      padding: 0; } }
+  @media only screen and (max-width: 38.75em) {
+    .about {
+      padding: 4rem 1rem; } }
   .about__img {
     padding: 0 4rem;
     width: 24rem;
@@ -52,13 +58,18 @@ body {
     @media only screen and (max-width: 67.5em) {
       .about__img {
         padding-right: 0; } }
+    .about__img img {
+      box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2); }
   .about__text {
     justify-content: center;
     padding: 0;
-    padding-left: 4rem; }
+    padding-right: 4rem; }
     @media only screen and (max-width: 48.75em) {
       .about__text {
-        padding-left: 2rem; } }
+        padding-right: 2rem; } }
+    @media only screen and (max-width: 38.75em) {
+      .about__text {
+        padding-left: 0; } }
     .about__text--title {
       margin-bottom: 8rem;
       font-size: 5rem;
@@ -70,6 +81,9 @@ body {
       @media only screen and (max-width: 61.25em) {
         .about__text--title {
           margin-bottom: 2rem; } }
+      @media only screen and (max-width: 38.75em) {
+        .about__text--title {
+          font-size: 4rem; } }
     .about__text--about {
       margin-bottom: 4rem;
       font-size: 2.8rem;
@@ -77,6 +91,9 @@ body {
       @media only screen and (max-width: 67.5em) {
         .about__text--about {
           font-size: 2.5rem; } }
+      @media only screen and (max-width: 38.75em) {
+        .about__text--about {
+          margin-bottom: 0; } }
 
 .banner {
   height: 110vh;
@@ -85,9 +102,9 @@ body {
   background-position: center;
   background-attachment: fixed;
   position: relative; }
-  @media only screen and (max-width: 61.25em) {
+  @media only screen and (max-width: 48.75em) {
     .banner {
-      height: 100%;
+      height: 90vh;
       width: auto; } }
 
 .container {
@@ -96,10 +113,16 @@ body {
     .container {
       padding: 2rem;
       padding-top: 2rem; } }
+  @media only screen and (max-width: 38.75em) {
+    .container {
+      padding: 0; } }
   .container__line {
     width: 32rem;
     margin-right: auto;
     margin-left: auto; }
+    @media only screen and (max-width: 38.75em) {
+      .container__line {
+        width: 16rem; } }
     .container__line--1 {
       margin-top: 6rem;
       margin-bottom: 2rem;
@@ -111,6 +134,9 @@ body {
         .container__line--1 {
           margin-top: 4rem;
           margin-bottom: 4rem; } }
+      @media only screen and (max-width: 38.75em) {
+        .container__line--1 {
+          display: none; } }
     .container__line--2 {
       margin-top: 14rem;
       margin-bottom: 2rem;
@@ -126,6 +152,9 @@ body {
       @media only screen and (max-width: 48.75em) {
         .container__line--2 {
           margin-top: 10rem; } }
+      @media only screen and (max-width: 38.75em) {
+        .container__line--2 {
+          margin-top: 4rem; } }
     .container__line--3 {
       margin-top: 2rem;
       margin-bottom: 10rem;
@@ -154,6 +183,11 @@ body {
     .gall {
       margin-top: -12rem;
       height: 80vh; } }
+  @media only screen and (max-width: 38.75em) {
+    .gall {
+      height: 48vh;
+      margin-top: 0;
+      padding: 2rem; } }
   .gall__title {
     margin-top: 8rem;
     padding: 4rem;
@@ -167,6 +201,9 @@ body {
     @media only screen and (max-width: 48.75em) {
       .gall__title {
         margin-top: 2rem; } }
+    @media only screen and (max-width: 48.75em) {
+      .gall__title {
+        margin-top: 0; } }
   .gall__descr {
     font-size: 2rem;
     font-weight: 200;
@@ -187,9 +224,11 @@ body {
   @media only screen and (max-width: 67.5em) {
     .gallery {
       margin-top: -16rem; } }
-  @media only screen and (max-width: 48.75em) {
+  @media only screen and (max-width: 38.75em) {
     .gallery {
-      margin-top: -14rem; } }
+      margin-top: -12rem;
+      padding: 3rem 1rem;
+      grid-gap: .5rem; } }
   .gallery__item--1 {
     grid-row: 1 / span 4;
     grid-column: 1 / span 6; }
@@ -222,52 +261,52 @@ body {
 
 .col-1-of-2 {
   width: calc((100% - 5rem) / 2); }
+  @media only screen and (max-width: 38.75em) {
+    .col-1-of-2 {
+      width: calc((100% - 3rem) / 2); } }
 
 .footer {
   background-color: #161616;
-  padding: 7rem; }
+  padding: 10rem 7rem; }
   @media only screen and (max-width: 61.25em) {
     .footer {
       padding: 6rem; } }
+  @media only screen and (max-width: 38.75em) {
+    .footer {
+      margin-top: -4rem;
+      padding: 2rem 0; } }
   .footer__text {
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    padding: 2rem 0; }
+    @media only screen and (max-width: 38.75em) {
+      .footer__text {
+        padding: 0; } }
   .footer__logo {
     font-size: 6rem;
     font-family: 'Montserrat', sans-serif;
     color: white;
-    margin-top: -14rem; }
+    text-align: center; }
   .footer p {
     color: gray;
     font-size: 1.5rem;
     font-family: 'Mukta', sans-serif;
     text-align: center;
-    padding: 3rem;
-    padding-top: 0;
-    margin-top: -4rem; }
-    @media only screen and (max-width: 67.5em) {
+    padding: 0 3rem; }
+    @media only screen and (max-width: 38.75em) {
       .footer p {
-        margin-top: -2rem; } }
-    @media only screen and (max-width: 61.25em) {
-      .footer p {
-        margin-top: -0; } }
+        font-size: 1.2;
+        padding-bottom: .4rem; } }
 
 .contact {
-  width: 32%;
-  margin-top: 4rem;
-  padding: 8rem;
+  width: 40%;
+  padding: 2rem 2rem 4rem 4rem;
   font-weight: 100; }
-  @media only screen and (max-width: 67.5em) {
+  @media only screen and (max-width: 38.75em) {
     .contact {
-      padding: 6rem; } }
-  @media only screen and (max-width: 61.25em) {
-    .contact {
-      padding: 4rem; } }
-  @media only screen and (max-width: 48.75em) {
-    .contact {
-      padding-right: 0;
-      padding-left: 2rem; } }
+      width: 50%;
+      padding-right: 0; } }
   .contact__title {
     margin-bottom: 1rem;
     font-size: 2rem;
@@ -281,20 +320,13 @@ body {
     color: gray; }
 
 .follow {
-  width: 32%;
-  margin-top: 4rem;
-  padding: 8rem;
+  width: 40%;
+  padding: 2rem 4rem 4rem 2rem;
   font-weight: 100;
   text-align: right; }
-  @media only screen and (max-width: 67.5em) {
+  @media only screen and (max-width: 38.75em) {
     .follow {
-      padding: 6rem; } }
-  @media only screen and (max-width: 61.25em) {
-    .follow {
-      padding: 4rem; } }
-  @media only screen and (max-width: 48.75em) {
-    .follow {
-      padding-right: 2rem;
+      width: 50%;
       padding-left: 0; } }
   .follow__title {
     margin-bottom: 1rem;
@@ -335,17 +367,29 @@ body {
     @media only screen and (max-width: 48.75em) {
       .header__text {
         padding: 8rem; } }
+    @media only screen and (max-width: 38.75em) {
+      .header__text {
+        padding-left: 4rem;
+        padding-right: 4rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center; } }
     .header__text--intro {
       font-size: 3rem;
       font-weight: 200;
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      text-align: left; }
     .header__text--main {
       font-size: 5.5rem;
-      font-weight: 400; }
+      font-weight: 400;
+      text-align: left; }
   .header__icons {
     margin-left: 3rem;
     margin-top: 0;
     list-style: none; }
+    @media only screen and (max-width: 61.25em) {
+      .header__icons {
+        margin-top: 4rem; } }
     .header__icons--icon {
       margin-top: 1rem;
       font-size: 2.8rem; }
@@ -358,6 +402,9 @@ body {
   color: white;
   padding: 3rem;
   position: relative; }
+  @media only screen and (max-width: 61.25em) {
+    .navigation {
+      margin-bottom: 4rem; } }
   .navigation__logo {
     font-size: 4rem;
     font-family: 'Montserrat', sans-serif; }
@@ -366,10 +413,19 @@ body {
     position: fixed;
     top: 3rem;
     right: 4rem;
-    padding: 1rem 1.5rem;
+    padding: .8rem 1.2rem;
     background-color: rgba(22, 22, 22, 0.2);
     border-radius: 2px;
     cursor: pointer; }
     @media only screen and (max-width: 61.25em) {
       .navigation__nav {
-        padding: .8rem 1.2rem; } }
+        margin-right: -.6rem; } }
+    @media only screen and (max-width: 48.75em) {
+      .navigation__nav {
+        margin-top: -.1rem;
+        margin-right: -1rem; } }
+    @media only screen and (max-width: 38.75em) {
+      .navigation__nav {
+        padding: .8rem 1rem;
+        margin-top: -.4rem;
+        margin-right: -1.8rem; } }

@@ -6,11 +6,19 @@
     padding-top: 2rem;
   }
 
+  @include respond(phone-sm) {
+    padding: 0;
+  }
+
   &__line {
     width: 32rem;
 
     margin-right: auto;
     margin-left: auto;
+
+    @include respond(phone-sm) {
+      width: 16rem;
+    }
 
     &--1 {
       margin-top: 6rem;
@@ -20,9 +28,15 @@
       height: 1px;
       border: none;
 
+
+
       @include respond(tab-port) {
         margin-top: 4rem;
         margin-bottom: 4rem;
+      }
+
+      @include respond(phone-sm) {
+        display: none;
       }
     }
 
@@ -43,6 +57,10 @@
       @include respond(phone-lg) {
         margin-top: 10rem;
       }
+
+      @include respond(phone-sm) {
+        margin-top: 4rem;
+      }
     }
 
     &--3 {
@@ -61,6 +79,7 @@
       @include respond(phone-lg) {
         display: none;
       }
+
     }
 
 
