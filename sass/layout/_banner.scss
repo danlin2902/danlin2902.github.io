@@ -20,9 +20,10 @@
     width: auto;
   }
 
-  @include respond(phone-lg) {
-    height: 90vh;
-    width: auto;
+  @include respond(phone-sm) {
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 
 }

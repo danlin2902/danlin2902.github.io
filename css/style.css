@@ -107,10 +107,11 @@ body {
     .banner {
       height: 90vh;
       width: auto; } }
-  @media only screen and (max-width: 48.75em) {
+  @media only screen and (max-width: 38.75em) {
     .banner {
-      height: 90vh;
-      width: auto; } }
+      -webkit-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
 
 .container {
   padding: 5rem; }
