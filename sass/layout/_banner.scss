@@ -21,6 +21,7 @@
 
   @include respond(phone-sm) {
     background-size: auto;
+    background-repeat: no-repeat;
   }
 
 }
