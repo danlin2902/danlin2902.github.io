@@ -18,7 +18,7 @@
   @include respond(phone-lg) {
     height: 90vh;
     width: auto;
-    background-attachment: local;
+    background-attachment: scroll;
   }
 
   @include respond(phone-sm) {

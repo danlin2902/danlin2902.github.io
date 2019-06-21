@@ -107,7 +107,7 @@ body {
     .banner {
       height: 90vh;
       width: auto;
-      background-attachment: local; } }
+      background-attachment: scroll; } }
 
 .container {
   padding: 5rem; }
