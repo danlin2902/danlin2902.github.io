@@ -9,7 +9,7 @@
   background-position: center;
   background-attachment: fixed;
   position: relative;
-  display: block;
+  // display: block;
 
   // @include respond(tab-land) {
   //   height: 100vh;
@@ -18,10 +18,11 @@
   @include respond(phone-lg) {
     height: 90vh;
     width: auto;
-    background-attachment: scroll;
+
   }
 
   @include respond(phone-sm) {
+    background-attachment: scroll;
   }
 
 }

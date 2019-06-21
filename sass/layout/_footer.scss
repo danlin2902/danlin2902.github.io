@@ -27,6 +27,10 @@
     font-family: 'Montserrat', sans-serif;
     color: white;
     text-align: center;
+
+    @include respond(phone-sm) {
+      padding-top: 2rem;
+    }
   }
 
   p {
@@ -35,6 +39,7 @@
     font-family: 'Mukta', sans-serif;
     text-align: center;
     padding: 0 3rem;
+
 
 
     // @include respond(tab-land) {
