@@ -101,14 +101,15 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  position: relative; }
+  position: relative;
+  display: block; }
   @media only screen and (max-width: 48.75em) {
     .banner {
       height: 90vh;
       width: auto; } }
   @media only screen and (max-width: 38.75em) {
     .banner {
-      background-attachment: scroll; } }
+      background-size: auto; } }
 
 .container {
   padding: 5rem; }
