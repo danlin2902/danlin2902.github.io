@@ -101,6 +101,7 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  background-repeat: no-repeat;
   position: relative;
   display: block; }
   @media only screen and (max-width: 48.75em) {
