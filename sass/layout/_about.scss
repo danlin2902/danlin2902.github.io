@@ -20,7 +20,7 @@
   }
 
   @include respond(phone-sm) {
-    padding: 4rem 1rem;
+    padding: 6rem 0;
   }
 
   &__img {
@@ -51,6 +51,7 @@
 
     @include respond(phone-sm) {
       padding-left: 0;
+      padding-right: 3rem;
     }
 
 

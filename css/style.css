@@ -50,7 +50,7 @@ body {
       padding: 0; } }
   @media only screen and (max-width: 38.75em) {
     .about {
-      padding: 4rem 1rem; } }
+      padding: 6rem 0; } }
   .about__img {
     padding: 0 4rem;
     width: 24rem;
@@ -69,7 +69,8 @@ body {
         padding-right: 2rem; } }
     @media only screen and (max-width: 38.75em) {
       .about__text {
-        padding-left: 0; } }
+        padding-left: 0;
+        padding-right: 3rem; } }
     .about__text--title {
       margin-bottom: 8rem;
       font-size: 5rem;
@@ -110,6 +111,7 @@ body {
       width: auto; } }
   @media only screen and (max-width: 38.75em) {
     .banner {
+      height: 100vh;
       background-size: auto;
       background-repeat: no-repeat; } }
 
