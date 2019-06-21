@@ -359,6 +359,12 @@ body {
       .follow__icons--icon a {
         display: block;
         color: gray; }
+        .follow__icons--icon a.grow {
+          transition: all .2s ease-in-out; }
+        .follow__icons--icon a:hover {
+          color: #b4b4b4;
+          transform: scale(1.1);
+          cursor: pointer; }
 
 .header {
   color: white;
@@ -405,7 +411,14 @@ body {
         .header__icons--icon {
           font-size: 3rem; } }
       .header__icons--icon a {
+        display: inline-block;
         color: white; }
+        .header__icons--icon a.grow {
+          transition: all .2s; }
+        .header__icons--icon a:hover {
+          color: #b4b4b4;
+          transform: scale(1.1);
+          cursor: pointer; }
 
 .navigation {
   display: flex;
