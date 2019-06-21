@@ -4,7 +4,7 @@
     to right bottom,
     rgba(0,0,0, 0.3),
     rgba(0,0,0, 0.3)),
-  url(../../img/header-athens.jpg);
+  url(../../img/header-athens.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -21,7 +21,6 @@
 
   @include respond(phone-sm) {
     background-size: auto;
-    background: no-repeat;
   }
 
 }
