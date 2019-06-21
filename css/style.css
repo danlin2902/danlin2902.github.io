@@ -107,7 +107,7 @@ body {
     .banner {
       height: 90vh;
       width: auto;
-      background-attachment: none; } }
+      background-attachment: local; } }
 
 .container {
   padding: 5rem; }
