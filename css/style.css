@@ -100,9 +100,8 @@ body {
   height: 110vh;
   background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../img/header-athens.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-attachment: fixed;
-  background-repeat: no-repeat;
   position: relative;
   display: block; }
   @media only screen and (max-width: 48.75em) {
@@ -111,8 +110,7 @@ body {
       width: auto; } }
   @media only screen and (max-width: 38.75em) {
     .banner {
-      background-size: auto;
-      background-repeat: no-repeat; } }
+      background-size: cover; } }
 
 .container {
   padding: 5rem; }
