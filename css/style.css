@@ -108,9 +108,6 @@ body {
     .banner {
       height: 90vh;
       width: auto; } }
-  @media only screen and (max-width: 38.75em) {
-    .banner {
-      background-size: cover; } }
 
 .container {
   padding: 5rem; }
