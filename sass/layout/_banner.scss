@@ -13,11 +13,10 @@
 
   @include respond(phone-lg) {
     height: 90vh;
-    width: auto;
-
   }
 
   @include respond(phone-sm) {
+    background-size: cover;
   }
 
 }
