@@ -111,7 +111,6 @@ body {
       width: auto; } }
   @media only screen and (max-width: 38.75em) {
     .banner {
-      height: 100vh;
       background-size: auto;
       background-repeat: no-repeat; } }
 
