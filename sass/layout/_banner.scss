@@ -1,22 +1,37 @@
 .banner {
-  height: 110vh;
-  background-image: linear-gradient(
-    to right bottom,
-    rgba(0,0,0, 0.3),
-    rgba(0,0,0, 0.3)),
-  url(../../img/header-athens.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-  position: relative;
-  display: block;
+    padding: 0;
+    margin: 0;
 
-  @include respond(phone-lg) {
-    height: 90vh;
-  }
+    content:"";
+    position:fixed;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    z-index:-1;
+    display:block;
+    background: linear-gradient(
+                to right bottom,
+                 rgba(0,0,0, 0.3),
+                rgba(0,0,0, 0.3)),
+                url(../../img/header-athens.jpg)
+                no-repeat 50% 50%;
+    background-size: cover;
 
-  @include respond(phone-sm) {
+  &__background {
+    padding: 0;
+    margin: 0;
 
-  }
+    height: 110vh;
+    position: relative;
+    display: block;
+
+    @include respond(phone-lg) {
+      height: 90vh;
+    }
+
+    @include respond(phone-sm) {
+      height: 100vh;
+    }
 
 }
