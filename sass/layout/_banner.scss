@@ -16,7 +16,7 @@
   }
 
   @include respond(phone-sm) {
-    background-size: cover;
+    background-size: auto;
   }
 
 }
