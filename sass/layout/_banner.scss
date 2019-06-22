@@ -16,6 +16,7 @@
   }
 
   @include respond(phone-sm) {
+    height: 85vh;
     background-size: auto;
     background-attachment: scroll;
   }
