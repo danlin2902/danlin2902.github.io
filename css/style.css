@@ -109,7 +109,9 @@ body {
       height: 90vh; } }
   @media only screen and (max-width: 38.75em) {
     .banner {
-      background-size: auto; } }
+      height: 100vh;
+      background-size: auto;
+      background-attachment: scroll; } }
 
 .container {
   padding: 5rem; }
