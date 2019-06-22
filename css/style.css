@@ -380,7 +380,8 @@ body {
   font-family: 'Montserrat', sans-serif; }
   .header__text {
     padding: 16rem 18rem;
-    margin: 0 auto; }
+    margin: 0 auto;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3); }
     @media only screen and (max-width: 80em) {
       .header__text {
         padding: 12rem 14rem; } }
