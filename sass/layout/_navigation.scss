@@ -61,7 +61,6 @@
   transition: .5s;
 
   @include respond(tab-port) {
-      margin-right: -.6rem;
     }
 
   &__links {

@@ -463,8 +463,7 @@ body {
       .navigation__nav {
         padding: .8rem 1rem;
         margin-top: -.4rem;
-        margin-right: -1rem;
-        position: static; } }
+        margin-right: -1rem; } }
 
 .sidenav {
   height: 100vh;
@@ -478,9 +477,6 @@ body {
   overflow-x: hidden;
   padding-top: 4rem;
   transition: .5s; }
-  @media only screen and (max-width: 61.25em) {
-    .sidenav {
-      margin-right: -.6rem; } }
   .sidenav__links {
     margin-top: 8rem; }
     @media only screen and (max-width: 61.25em) {

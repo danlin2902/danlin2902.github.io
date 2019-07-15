@@ -134,12 +134,24 @@
     </div>
 
     <script>
-      if (document.documentElement.clientWidth < 900) {
-        function openSideBar(){
+
+
+      // if (document.documentElement.clientWidth < 900) {
+      //   function openSideBar(){
+      //     document.getElementById('sidebar').style.width = '100vw';
+      //     document.getElementById('navbox').style.display = 'hidden';
+      //   }} else {
+      //   function openSideBar(){
+      //     document.getElementById('sidebar').style.width = '25vw';
+      //     document.getElementById('navbox').style.display = 'hidden';
+      //   }
+      // }
+
+      function openSideBar(){
+        if (document.documentElement.clientWidth < 900) {
           document.getElementById('sidebar').style.width = '100vw';
           document.getElementById('navbox').style.display = 'hidden';
-        }} else {
-        function openSideBar(){
+        } else {
           document.getElementById('sidebar').style.width = '25vw';
           document.getElementById('navbox').style.display = 'hidden';
         }
