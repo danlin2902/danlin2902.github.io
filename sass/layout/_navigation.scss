@@ -24,9 +24,10 @@
     top: 3rem;
     right: 4rem;
     padding: .7rem 1.1rem;
-    background-color: rgba(22, 22, 22, 0.2);
+    background-color: rgba(5, 5, 5, .3);
     border-radius: 2px;
     cursor: pointer;
+
 
 
     @include respond(tab-port) {
@@ -41,8 +42,137 @@
     @include respond(phone-sm) {
       padding: .8rem 1rem;
       margin-top: -.4rem;
-      margin-right: -1.8rem;
+      margin-right: -1rem;
       position: static;
     }
+  }
+}
+
+.sidenav {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top: 4rem;
+  transition: .5s;
+
+  @include respond(tab-port) {
+      margin-right: -.6rem;
+    }
+
+  &__links {
+    margin-top: 8rem;
+
+    @include respond(tab-port) {
+        margin-top: 4rem;
+      }
+
+
+      @include respond(phone-sm) {
+        margin-top: 3rem;
+
+      }
+
+    &--link {
+      padding: 1rem;
+      padding-top: 3rem;
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: white;
+      display: block;
+      transition: .3s;
+      text-align: center;
+      transition: .3s;
+    }
+
+  }
+
+
+
+  &__close {
+    position: absolute;
+    font-size: 3.8rem;
+    top: 2.4rem;
+    right: 4.2rem;
+    padding: .7rem 1.1rem;
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: .3s;
+
+      @include respond(tab-port) {
+        right: 4rem;
+      }
+
+
+      @include respond(phone-sm) {
+        right: 2.8rem;
+
+      }
+  }
+}
+
+.social {
+  width: 100%;
+  // padding: 2rem 4rem 4rem 2rem;
+  font-weight: 100;
+  text-align: center;
+  margin-top: 24rem;
+
+  @include respond(tab-land) {
+    margin-top: 20rem;
+  }
+
+  @include respond(tab-port) {
+    margin-top: 16rem;
+
+  }
+  @include respond(phone-sm) {
+    margin-top: 12rem;
+
+  }
+
+
+
+  &__nav {
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+
+    &--icon {
+      display: inline-block;
+      align-items: center;
+      text-align: right;
+      font-size: 2.6rem;
+      margin: 0 .5rem;
+
+      // @include respond(phone-lg) {
+      //   margin-left: 1rem;
+      // }
+
+
+      a {
+        display: block;
+        color: gray;
+
+        &.grow {
+          transition: all .2s ease-in-out;
+
+        }
+
+        &:hover {
+        color: rgb(180, 180, 180);
+        transform: scale(1.1);
+        cursor: pointer;
+
+        }
+      }
+    }
+
   }
 }

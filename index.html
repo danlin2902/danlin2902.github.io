@@ -29,8 +29,25 @@
 
       <div class="navigation">
         <h1 class="navigation__logo">dL</h1>
-        <i class="fas fa-bars navigation__nav"></i>
+        <i id="navbox" class="fas fa-bars navigation__nav" onclick="openSideBar()"></i>
+        <div id="sidebar" class="sidenav">
+          <a href="#" class="sidenav__close" onclick="closeSideBar()">&times;</a>
+          <div class="sidenav__links">
+            <a href="#" class="sidenav__links--link grow" onclick="closeSideBar()">home</a>
+            <a href="#about_me" class="sidenav__links--link grow" onclick="closeSideBar()">about</a>
+            <a href="#photo_gallery" class="sidenav__links--link grow" onclick="closeSideBar()">gallery</a>
+
+            <div class="social">
+              <ul class="social__nav">
+                <li class="social__nav--icon"><a class="grow" href="https://www.facebook.com/danlin2902"><i class="fab fa-facebook-square"></i></a></li>
+                <li class="social__nav--icon"><a  class="grow" href="https://www.instagram.com/daniel_lindsey/"><i class="fab fa-instagram"></i></a></li>
+                <li class="social__nav--icon"><a class="grow" href="https://www.linkedin.com/in/daniel-lindsey/"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
+
 
       <header class="header">
         <div class="header__text">
@@ -50,7 +67,7 @@
 
       <hr class="container__line container__line--1">
 
-      <div class="about">
+      <div id="about_me" class="about">
         <img class="about__img col-1-of-2" src="img/photo-me.jpg" alt="portrait of me">
         <div class="about__text col-1-of-2">
           <h3 class="about__text--title">about me</h3>
@@ -64,7 +81,7 @@
       <hr class="container__line container__line--2">
 
 
-      <h3 class="gall__title">-gallery-</h3>
+      <h3 id="photo_gallery" class="gall__title">-gallery-</h3>
       <h4 class="gall__descr">a few of my favorites...</h4>
     </div>
 
@@ -115,6 +132,29 @@
       <p>&copy; 2019 | design by daniel Lindsey</p>
 
     </div>
+
+    <script>
+      if (document.documentElement.clientWidth < 900) {
+        function openSideBar(){
+          document.getElementById('sidebar').style.width = '100vw';
+          document.getElementById('navbox').style.display = 'hidden';
+        }} else {
+        function openSideBar(){
+          document.getElementById('sidebar').style.width = '25vw';
+          document.getElementById('navbox').style.display = 'hidden';
+        }
+      }
+
+      function closeSideBar(){
+        document.getElementById('sidebar').style.width = '0';
+        document.getElementById('navbox').style.display = 'visible';
+
+      }
+
+
+
+
+    </script>
 
 
 

@@ -226,7 +226,7 @@ body {
   margin-bottom: 0;
   grid-column: full-start / full-end;
   display: grid;
-  grid-template-columns: repeat(11, 1fr);
+  grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(20, 6vw);
   grid-gap: 1.5rem;
   padding: 3rem;
@@ -449,7 +449,7 @@ body {
     top: 3rem;
     right: 4rem;
     padding: .7rem 1.1rem;
-    background-color: rgba(22, 22, 22, 0.2);
+    background-color: rgba(5, 5, 5, 0.3);
     border-radius: 2px;
     cursor: pointer; }
     @media only screen and (max-width: 61.25em) {
@@ -463,5 +463,89 @@ body {
       .navigation__nav {
         padding: .8rem 1rem;
         margin-top: -.4rem;
-        margin-right: -1.8rem;
+        margin-right: -1rem;
         position: static; } }
+
+.sidenav {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top: 4rem;
+  transition: .5s; }
+  @media only screen and (max-width: 61.25em) {
+    .sidenav {
+      margin-right: -.6rem; } }
+  .sidenav__links {
+    margin-top: 8rem; }
+    @media only screen and (max-width: 61.25em) {
+      .sidenav__links {
+        margin-top: 4rem; } }
+    @media only screen and (max-width: 38.75em) {
+      .sidenav__links {
+        margin-top: 3rem; } }
+    .sidenav__links--link {
+      padding: 1rem;
+      padding-top: 3rem;
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: white;
+      display: block;
+      transition: .3s;
+      text-align: center;
+      transition: .3s; }
+  .sidenav__close {
+    position: absolute;
+    font-size: 3.8rem;
+    top: 2.4rem;
+    right: 4.2rem;
+    padding: .7rem 1.1rem;
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: .3s; }
+    @media only screen and (max-width: 61.25em) {
+      .sidenav__close {
+        right: 4rem; } }
+    @media only screen and (max-width: 38.75em) {
+      .sidenav__close {
+        right: 2.8rem; } }
+
+.social {
+  width: 100%;
+  font-weight: 100;
+  text-align: center;
+  margin-top: 24rem; }
+  @media only screen and (max-width: 67.5em) {
+    .social {
+      margin-top: 20rem; } }
+  @media only screen and (max-width: 61.25em) {
+    .social {
+      margin-top: 16rem; } }
+  @media only screen and (max-width: 38.75em) {
+    .social {
+      margin-top: 12rem; } }
+  .social__nav {
+    list-style: none;
+    margin: 0;
+    padding: 1rem; }
+    .social__nav--icon {
+      display: inline-block;
+      align-items: center;
+      text-align: right;
+      font-size: 2.6rem;
+      margin: 0 .5rem; }
+      .social__nav--icon a {
+        display: block;
+        color: gray; }
+        .social__nav--icon a.grow {
+          transition: all .2s ease-in-out; }
+        .social__nav--icon a:hover {
+          color: #b4b4b4;
+          transform: scale(1.1);
+          cursor: pointer; }
